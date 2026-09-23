@@ -417,7 +417,7 @@ wheels = [
 [[package]]
 name = "langchain-learning"
 version = "0.1.0"
-source = { editable = "." }
+source = { virtual = "." }
 dependencies = [
     { name = "langchain", extra = ["openai"] },
     { name = "python-dotenv" },
