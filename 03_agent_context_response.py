@@ -64,13 +64,14 @@ print(response['structured_response'])
 print(response['structured_response'].summary)
 
 
-
-
+# 继续对话
 config = {'configurable': {'thread_id': 1}}
+# 无法继续对话
+# config = {'configurable': {'thread_id': 2}}
  
 response = agent.invoke(
     {'messages':[
-        {'role': 'user', 'content': 'What is the weather like in Vienna?'}
+        {'role': 'user', 'content': 'And is this usual?'}
         ]},
     config = config,
     context = Context(user_id = 'ABC123')
